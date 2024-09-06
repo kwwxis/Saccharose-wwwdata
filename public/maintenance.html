@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Saccharose.wiki</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js" integrity="sha256-0H3Nuz3aug3afVbUlsu12Puxva3CP4EhJtPExqs54Vg=" crossorigin="anonymous"></script>
+  <style>
+  * {
+    margin:0;
+    padding: 0
+  }
+  body {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
+  }
+  body.nightmode {
+    background: #17151e;
+    color: #b8b7be;
+  }
+  .wrapper {
+    max-width: 800px;
+    margin: 100px auto 0;
+    font-size: 16px;
+    padding: 20px;
+  }
+  </style>
+</head>
+<body>
+  <script>
+  (() => {
+    let visitorPrefsRaw = Cookies.get('VisitorUserPrefs');
+    if (visitorPrefsRaw) {
+      let visitorPrefs = JSON.parse(visitorPrefsRaw);
+      if (visitorPrefs.isNightmode) {
+        console.log('nightmode!');
+      }
+    }
+  })();
+  </script>
+  <div class="wrapper">
+    <img src="/static/Sucrose_2.png" style="width: 100px; height: auto" />
+    
+    <h1>Saccharose.wiki is currently down for maintenance</h1>
+    
+    <p style="margin-top:5px">Hello! The website is currently undergoing maintenance.</p>
+    
+    <p style="margin-top:15px">Check again later.</p>
+</body>
+</html>
